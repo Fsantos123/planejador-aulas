@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Aula</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Novo Planejamento</h1>
+
+    <form method="POST">
+
+        <input type="text"
+        name="tema"
+        placeholder="Tema">
+
+        <input type="text"
+        name="turma"
+        placeholder="Turma">
+
+        <input type="date"
+        name="data">
+
+        <textarea
+        name="objetivo"
+        placeholder="Objetivo"></textarea>
+
+        <textarea
+        name="atividade"
+        placeholder="Atividade"></textarea>
+
+        <button type="submit">
+            Salvar
+        </button>
+
+    </form>
+
+</body>
+</html>

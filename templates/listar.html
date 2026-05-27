@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Planejamentos</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Planejamentos</h1>
+
+    {% for plano in planos %}
+
+        <div class="card">
+
+            <h2>{{ plano[1] }}</h2>
+
+            <p>Turma: {{ plano[2] }}</p>
+
+            <p>Data: {{ plano[3] }}</p>
+
+            <p>{{ plano[4] }}</p>
+
+            <p>{{ plano[5] }}</p>
+
+        </div>
+
+    {% endfor %}
+
+</body>
+</html>
